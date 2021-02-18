@@ -20,15 +20,13 @@ class Main {
     int userNum = s.nextInt();
     int randomNum = r.nextInt(userNum);
 
-    System.out.println("the random number was: "+ randomNum);
     System.out.println("A random number to guess has been generated.");
 
     playGame(randomNum, userNum);
 
     }
     static void playGame(int guessNum, int inputNum) {
-        System.out.println("The guessNum = " + guessNum);
-        System.out.println("The inputNum = " + inputNum);
+
         System.out.println("Please guess a number between 0 and " + inputNum);
           Scanner sc = new Scanner(System.in);
           int userGuess = sc.nextInt();        
